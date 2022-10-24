@@ -1,0 +1,39 @@
+.festivals-names__container{
+    color: rgb(255 255 255 / 80%);
+}
+
+.festivals-names__container>*:not(:last-child){
+    margin: 0px 0px 30px 0px;
+}
+
+.festival-element{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.festival-element:hover{
+    color: rgba(255, 161, 20, 0.8);
+}
+
+.total-cost{
+    font-size: 16px;
+    color: rgb(255 255 255 / 80%);
+}
+
+.total-cost-button{
+    display: flex;
+    cursor: pointer;
+    color: rgb(255 255 255 / 80%);
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: grey;
+    justify-content: center;
+    align-items: center;
+}
+

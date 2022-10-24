@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление билетов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container active">
+        <form method="POST" action="form.php" class="active">
+            <fieldset class="fieldset">
+                <legend>Заказ билетов на событие</legend>
+
+                <div class="festivals-names__container active">
+                    <h3 class="">Выберите событие и закажите билеты:</h3>
+                    <h2 class="festival-element" data-name="wood-story">Фестиваль "Лесная сказка"</h2>
+                    <h2 class="festival-element" data-name="gifts-of-the-forest">Встреча-экскурсия "Дары леса"</h2>
+                    <h2 class="festival-element" data-name="river-trip">Экскурсия "Речное приключение"</h2>
+                    <h2 class="festival-element" data-name="halloween">Фестиваль "Хэллуин"</h2>
+                </div>
+
+                <div class="story__container disactive">
+                    <h2 class="story__title" data-story='title'></h2>
+                    <p class="story__text">Даты проведения мероприятия:</p>
+
+                    <label for="story__one" class="form-label">
+                        <input type="radio" id="story__one" value="one" name="story-time" checked
+                            class="form-element inp-radio-one inp-radio">
+                        <span class="label-radio-text" data-story='radio-one'></span>
+                    </label>
+                    <label for="story__two" class="form-label">
+                        <input type="radio" id="story__two" value="two" name="story-time"
+                            class="form-element inp-radio-two inp-radio">
+                        <span class="label-radio-text" data-story='radio-two'></span>
+                    </label>
+                    <label for="story__three" class="form-label">
+                        <input type="radio" id="story__three" value="three" name="story-time"
+                            class="form-element inp-radio-three inp-radio">
+                        <span class="label-radio-text" data-story='radio-three'></span>
+                    </label>
+                    <label for="story__four" class="form-label">
+                        <input type="radio" id="story__four" value="four" name="story-time"
+                            class="form-element inp-radio-four inp-radio">
+                        <span class="label-radio-text" data-story='radio-four'></span>
+                    </label>
+
+
+                    <label for="ticket_adult_quantity" class="form-label">
+                        <span data-story="adult_quantity"></span>
+                        <input type="number" id="ticket_adult_quantity" name="ticket_adult"
+                            class="form-element adult_quantity">
+
+                        <button class="plas plas-adult">+</button>
+                        <button class="minus minus-adult">-</button>
+                    </label>
+
+                    <label for="ticket_kid_quantity" class="form-label">
+                        <span data-story="kid_quantity"></span>
+                        <input type="number" name="ticket_kid" id="ticket_kid_quantity"
+                            class="form-element kid_quantity">
+                        <div class="plas plas-kid">+</div>
+                        <div class="minus minus-kid">-</div>
+                    </label>
+
+                    <div class="total-cost">Сумма заказа: <span class="total-cost-number">0</span> рублей</div>
+                    <div class="total-cost-button">Посчитать сумму</div>
+
+                </div>
+
+                <div class="form-footer__container invisible">
+                    <button type="submit" class="form-button">Оформить заказ</button>
+                    <button class="button-back">Выбрать другое событие</button>
+                    <div class="form-footer__date">
+                        <div class="date"></div>
+                        <div class="month"></div>
+                        <div class="hours"></div>
+                    </div>
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+    <div class="table-div-container table-disactive">
+        <h3 class="return-main-box">&lArr; Вернуться к покупке билетов</h3>
+
+        <table class="table__container">
+            <tr class="table-title__row">
+                <th class="title">id</th>
+                <th class="title">event_id</th>
+                <th class="title">event_date</th>
+                <th class="title">ticket_adult_price</th>
+                <th class="title">ticket_adult_quantity</th>
+                <th class="title">ticket_kid_price</th>
+                <th class="title">ticket_kid_quantity</th>
+                <th class="title">barcode</th>
+                <th class="title">user_id</th>
+                <th class="title">equal_price</th>
+                <th class="title">created</th>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
