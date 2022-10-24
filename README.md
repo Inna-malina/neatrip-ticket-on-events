@@ -1,1 +1,1 @@
-# neatrip-ticket-on-events
+https://inna-malina.github.io/neatrip-ticket-on-events/
